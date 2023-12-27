@@ -1,0 +1,22 @@
+# Mac OS
+.DS_Store
+
+# Nodejs
+node_modules
+
+# IDE
+.vscode
+.idea
+
+# Build directories
+build
+.next
+dist
+
+# Miscellaneous
+# *[.log, .orig] # Also ignores .gitconfig file don't know why
+**/*.log
+*.orig
+**/*.orig
+!*[.git*]
+.env
