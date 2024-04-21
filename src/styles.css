@@ -1,0 +1,11 @@
+.svg {
+  width: 100px;
+}
+
+.svg circle {
+  fill: red;
+}
+
+.svg ellipse {
+  stroke: red;
+}

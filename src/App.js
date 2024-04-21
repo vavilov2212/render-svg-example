@@ -1,23 +1,24 @@
 import React, { Component } from "react";
-// import Logo from "../public/logo.svg";
+import Logo from "../public/logo.svg";
+
+import "./styles.css";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <h1> Hello, World! </h1>
-        {/*<Logo />*/}
-        <img
-          src="logo.svg"
-          style={{
-            width: "100px",
-            fill: "red",
-            stroke: "red",
-            strokeWidth: "50px",
-          }}
-          alt=""
-        />
-      </div>
+        <div style={{ display: "flex", gap: "24px" }}>
+          <div className="component">
+            <p> This is a React component! </p>
+            <Logo className="svg" />
+          </div>
+          <div className="component">
+            <p> This is img tag! </p>
+            <img src="logo.svg" className="svg" alt="" />
+          </div>
+        </div>
+      </>
     );
   }
 }
